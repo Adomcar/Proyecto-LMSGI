@@ -1,0 +1,87 @@
+body{
+    background-image: url(Img/Wuthering-Waves-Header.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color:#ffec61;
+    width: 100%;
+}
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+}
+nav > ul > li {
+    margin: 0 5px;
+    display: inline;
+    
+}
+nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+li > a:hover{
+    text-decoration: underline;
+}
+nav{
+    display: flex;
+    background-color: #373739;
+}
+
+main{
+    width: 50%;
+    background-color: rgb(29, 28, 28);
+    border: 3px rgb(0, 9, 59) solid;
+    margin: auto;
+}
+li{
+    font-size: 20px;
+}
+header{
+    padding: 0%;
+    background-color: white;
+    display:flex;
+}
+h2{
+    border: 1px gold dotted;
+    margin: 0px 350px 0px 350px;
+    text-align: center;
+}
+header{
+    background-color:#19191a;
+    font-size: 30px;
+}
+h1{
+    margin: 0 auto;
+    padding: 20px 0px 20px 0px;
+}
+img{
+    margin: 0px;
+    padding: 0px;
+}
+[required]{
+    border-color: #4AA248;
+    box-shadow: 0px 0px 3px #4AA248;
+}
+:invalid{
+    border-color: #FF7F7F;
+    box-shadow: 0px 0px 3px #FF7F7F;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: stretch;
+}
+@media screen and (max-width: 768px) {
+    main {
+        width: 90%; /* hace que el área principal sea más pequeña en pantallas pequeñas */
+    }
+    nav {
+        flex-direction: column; /* cambia la dirección de la navegación en pantallas pequeñas */
+    }
+    h1, h2 {
+        font-size: 24px; /* reduce el tamaño de los encabezados en pantallas pequeñas */
+    }
+}
